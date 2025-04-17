@@ -1,0 +1,119 @@
+/* Genel Stil */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Başlık */
+.todo-header h1 {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Girdi Alanı ve Buton */
+.todo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  padding: 15px;
+  font-size: 1.1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.todo-input input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+.todo-input button {
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.todo-input button:hover {
+  background-color: #357ab7;
+  transform: translateY(-3px);
+}
+
+.todo-input button:active {
+  transform: translateY(1px);
+}
+
+/* Liste */
+.todo-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.todo-list .ant-list-item {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.todo-list .ant-list-item:hover {
+  background-color: #e8f1fc;
+  transform: translateX(5px);
+}
+
+/* Liste item focus efekti */
+.todo-list .ant-list-item:focus {
+  background-color: #e8f1fc;
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Liste item silme butonu */
+.ant-list-item-action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ant-list-item-action .anticon {
+  font-size: 20px;
+  cursor: pointer;
+  color: #e74c3c;
+}
+
+.ant-list-item-action .anticon:hover {
+  color: #c0392b;
+}
