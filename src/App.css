@@ -1,4 +1,3 @@
-/* Genel Stil */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -20,7 +19,6 @@ body {
   text-align: center;
 }
 
-/* Başlık */
 .todo-header h1 {
   font-size: 2.5rem;
   color: #4a90e2;
@@ -30,7 +28,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Girdi Alanı ve Buton */
 .todo-input {
   display: flex;
   flex-direction: column;
@@ -73,7 +70,6 @@ body {
   transform: translateY(1px);
 }
 
-/* Liste */
 .todo-list {
   max-height: 300px;
   overflow-y: auto;
@@ -95,14 +91,12 @@ body {
   transform: translateX(5px);
 }
 
-/* Liste item focus efekti */
 .todo-list .ant-list-item:focus {
   background-color: #e8f1fc;
   border-color: #4a90e2;
   outline: none;
 }
 
-/* Liste item silme butonu */
 .ant-list-item-action {
   display: flex;
   justify-content: flex-end;
